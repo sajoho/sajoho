@@ -1,37 +1,45 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <title>HTML문서의 제목입니다.</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
 </head>
 <body>
-<h1 style = "background-color:rgb(209, 170, 226);">워싱 칭따오</h1>
-<h2>하얼빈 양꼬치</h2>
-<br> 안녕하세요.
-<p>워 아이 니</p>
-<h1>따자 하오</h1>
-<p><strong>나는</strong>상종호입니다.</p>
-<p><em>"이 부분"</em>은 단순히 글씨가 눕혀진 부분이에요!</p>
-<p><mark>"이 부분"</mark>은 색깔이 달라요!</p>
-<p><del>"이 부분"</del>은 글자에 작대기가 생겨요!</p>
-<h1><mark>워싱 칭따오</mark></h1>
-<p>HTML의 정의</p>
-</blockquote>
-<p>워싱 칭따오</p>
-<p><strong><abbr title="싱 칭따오">워 </abbr></strong><strong><abbr title="얼빈 양꼬치">하</abbr></strong></p>
-&nbsp;
-안녕 나는 &quot;상종호&quot;이야
-<br />
-<br />
-&nbsp;
-안녕 나는 &apos;상종순&apos;이야
-<br />
-<br />
-<br />
-<img src="./image/df9e0491ae093a061cdfcfe5e2e4212fc952379a3458b7c3eb2d0dadd755ec5af0249084f230644d6e9fa6e2e869e61ea9751af003d4940d4a716999fd197e916c9aa4e60a22a2f7f2a83b91d315196f.jpg" alt="사진">
+
+    <form>
+        이름 : <br><input type = "text" name = "student_name"><br>        
+        학번 : <br><input type = "text" name = "student_id"><br>        
+        학과 : <br><input type = "text" name = "department" value = "전자회로과"><br>         
+        <br />
+        <input type = "date" name = "startday">
+        <p></p>
+        <input type = "time" name = "startday">
+    </form>
+    <p></p>
+    <form action = "./action.php" method = "get">
+        <fieldset>
+            <legend> 관리자 로그인 </legend>
+            이름 : <input type = "text" name = "st_name"><br>
+            학번 : <input type = "text" name = "st_id"><br>
+            학번 : <input type = "text" name = "department"><br>
+            <button type = "submit">제출하기</button>
+        </fieldset>
+    </form>
+        <p></p>
+        <form action = "./action2.php" method = "get">
+            <textarea name = "opinion" cols = "30" rows = "5"></textarea><br>
+            <input type = "submit">
+        </form>
+        <p></p>
+        <select name = "select" id = "select">
+            <option value = "default">본인의 과를 선택하세요</option>
+            <option value = "default">전자제어과</option>
+            <option value = "default">전자회로과</option>
+            <option value = "default">정보통신과</option>
+            <option value = "default">인공지능전자과</option>
+        </select>
+        
 </body>
-<style>
-    h1 {
-        background-color:aqua;
-    }
-</style>
 </html>

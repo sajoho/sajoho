@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <form>
+          고객명 : <br><input type = "text" name = "client_name"><br>
+          전화번호 : <br><input type = "text" name = "phone_number"><br>
+          E-mail : <br><input type = "text" name = "client_mail"><br>
+          <br />
+          피자선택 : <select name = "select" id = "select">
+            <option value = "default">피자를 선택하세요</option>
+            <option value = "default">치즈 퐁듀 파이어 미트</option>
+            <option value = "default">블록버스터4</option>
+            <option value = "default">글로벌 레전드4</option>
+            <option value = "default">블랙앵거스 스테이크</option>
+            <option value = "default">베스트 콰트로</option>
+            <option value = "default">블랙타이거 슈림프</option>
+          </select>
+      </form>  
+
+      <fieldset>
+        <legend>피자 사이즈</legend>
+        <input type = "radio">Small<br>
+        <br><input type = "radio">Medium<br>
+        <br><input type = "radio">Large<br>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+          <legend>토핑 선택</legend>
+          <br><input type = "checkbox">베이컨<br>
+          <br><input type = "checkbox">치즈<br>
+          <br><input type = "checkbox">양파<br>
+          <br><input type = "checkbox">버섯<br>
+          <br />
+      </fieldset>
+
+      <br/ >
+      
+        <form>
+          희망배송시간 : <input type = "time" name = "startday">
+        </form>
+        <form action = "./action.php" method = "get">
+            
+      <br />
+        
+        배송시 요청사항 :  <form action = "./action2.php" method = "get">
+            <textarea name = "opinion" cols = "30" rows = "5"></textarea><br>
+            <br><button type = "submit">주문하기</botton><br>
+        </form>
+
+          
+</body>
+</html>
